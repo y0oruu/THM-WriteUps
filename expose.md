@@ -11,6 +11,11 @@ My first step was to do a nmap scan of the machine to find open ports.
 
 ![image](https://github.com/user-attachments/assets/e7596004-9b59-423c-bea8-bbaf7e2b7736)
 
-By this scan, we can see that the "1337" port is open and the service discovered is "waste" , after further research we find that is a peer-to-peer and end-to-end protocol and software application. If we open our browser and type "expose.thm:1337", we find a web page.
+By this scan, we can see that the "1337" port is open and the service discovered is "waste" , after further research we find that is a peer-to-peer and end-to-end protocol and software application. If we open our browser and type "http://www.expose.thm:1337", we find a web page.
+
+The next step is to start a gobuster scan to find directories, maybe we'll find something interesting. 
+Once the scan is done, we can notice 2 interesting directories : "admin" and "admin_101".
+
+![image](https://github.com/user-attachments/assets/5669c114-3abe-4dfd-a781-febb8862396e)
 
 
