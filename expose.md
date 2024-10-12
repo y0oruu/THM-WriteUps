@@ -27,7 +27,7 @@ Next, we save the request in a ".txt" file and try to use it in sqlmap. And we c
 
 ![image](https://github.com/user-attachments/assets/c5e53bc2-36a7-4453-b239-2bd9ca73cd36)
 
-After dumping the "expose" database we find two links and the password for one page. The other one is asking for an username starting with "z". The first page is vulnerable to LFI, so let's try to get an output of the "/etc/passwd" file to get the user. After getting the content of the "passwd" file, we find out that the user we're looking for is "zeamkish"
+After dumping the "expose" database we find two links and the password for one page. The other one is asking for an username starting with "z". The first page is vulnerable to LFI, so let's try to get an output of the "/etc/passwd" file to get the user. After getting the content of the "passwd" file, we find out that the user we're looking for is "zeamkish".
 
 ![image](https://github.com/user-attachments/assets/f5d953ef-d3e6-4ffa-a626-a3bb6df05ffb)
 
@@ -35,7 +35,7 @@ On the upload page, if we type the user "zeamkish", we have access to an upload 
 
 ![image](https://github.com/user-attachments/assets/10808d16-78a6-484d-86bc-8adb69fee5c3)
 
-So, we create our revershell using "revhshells.com"
+So, we create our revershell using "revhshells.com".
 
 ![image](https://github.com/user-attachments/assets/0576bce9-2936-4f3e-9e8e-4c47b762972d)
 
@@ -47,7 +47,7 @@ And then we modify our file extension !
 
 ![image](https://github.com/user-attachments/assets/47c59c5e-cfce-455b-9255-dddcd38c7a69)
 
-Next, we go to the target directory and click on our reverseshell 
+Next, we go to the target directory and click on our reverseshell .
 
 ![image](https://github.com/user-attachments/assets/00d0330e-4047-4cd4-9c70-a6e063145625)
 
@@ -63,7 +63,7 @@ And we're connected as zeamkish !
 
 ![image](https://github.com/user-attachments/assets/2246121e-5652-439e-99de-f6738d2c6f0e)
 
-The next step is to look for a way to get root on this machine ! So I'm using linpeas to find a way to do it 
+The next step is to look for a way to get root on this machine ! So I'm using linpeas to find a way to do it.
 
 ![image](https://github.com/user-attachments/assets/f146f2e2-8f16-4465-81f0-1bc392bc5479)
 
@@ -78,6 +78,7 @@ So finally, by exploiting 'find', we are root !!
 To conclude, this machine was good, there was a lot of enumeration to make to finally pwn it !
 
 Sorry in advance if this WriteUp is not as good as you expected, it's my first one so i'll keep improving :) !
+
 Thanks for reading and see you in the next WriteUP !
 
 
