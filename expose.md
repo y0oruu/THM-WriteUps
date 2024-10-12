@@ -27,5 +27,39 @@ Next, we save the request in a ".txt" file and try to use it in sqlmap. And we c
 
 ![image](https://github.com/user-attachments/assets/c5e53bc2-36a7-4453-b239-2bd9ca73cd36)
 
+After dumping the "expose" database we find two links and the password for one page. The other one is asking for an username starting with "z". The first page is vulnerable to LFI, so let's try to get an output of the "/etc/passwd" file to get the user. After getting the content of the "passwd" file, we find out that the user we're looking for is "zeamkish"
+
+![image](https://github.com/user-attachments/assets/f5d953ef-d3e6-4ffa-a626-a3bb6df05ffb)
+
+On the upload page, if we type the user "zeamkish", we have access to an upload page where we can upload only image. If the file extension is not "png" || "jpg" then the upload button is not usable. So if we create a reverse shell with the extension ".php.png" and then capture our request and we put it on the "Repeater" and changing the ".php.png" by just "php", It would work !
+
+![image](https://github.com/user-attachments/assets/10808d16-78a6-484d-86bc-8adb69fee5c3)
+
+So, we create our revershell using "revhshells.com"
+
+![image](https://github.com/user-attachments/assets/0576bce9-2936-4f3e-9e8e-4c47b762972d)
+
+We capture our request : 
+
+![image](https://github.com/user-attachments/assets/cd14ad2e-0e67-4e6b-817f-d07b65e12f1b)
+
+And then we modify our file extension ! 
+
+![image](https://github.com/user-attachments/assets/47c59c5e-cfce-455b-9255-dddcd38c7a69)
+
+Next, we go to the target directory and click on our reverseshell 
+
+![image](https://github.com/user-attachments/assets/00d0330e-4047-4cd4-9c70-a6e063145625)
+
+And we have a shell ! 
+
+![image](https://github.com/user-attachments/assets/846a615a-d928-40cd-849d-b9e200db823a)
+
+
+
+
+
+
+
 
 
