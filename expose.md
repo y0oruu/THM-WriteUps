@@ -55,6 +55,30 @@ And we have a shell !
 
 ![image](https://github.com/user-attachments/assets/846a615a-d928-40cd-849d-b9e200db823a)
 
+After going on the "zeakmish" directory, we have an user.txt but no permission to see it, but there's an another file that we can see the content and it's the ssh creds of zeamkish ! 
+
+![image](https://github.com/user-attachments/assets/c5ed7d02-b144-4f5f-9b42-a5b1cba94ab0)
+
+And we're connected as zeamkish ! 
+
+![image](https://github.com/user-attachments/assets/2246121e-5652-439e-99de-f6738d2c6f0e)
+
+The next step is to look for a way to get root on this machine ! So I'm using linpeas to find a way to do it 
+
+![image](https://github.com/user-attachments/assets/f146f2e2-8f16-4465-81f0-1bc392bc5479)
+
+After check, we can escalate our privileges by using "nano" and "find" SUID. 
+
+![image](https://github.com/user-attachments/assets/87e6ee54-f8c7-4a3c-b605-714f468b9d03)
+
+So finally, by exploiting 'find', we are root !!
+
+![image](https://github.com/user-attachments/assets/541b6276-090a-4428-9050-d9b9fb578eaf)
+
+To conclude, this machine was good, there was a lot of enumeration to make to finally pwn it !
+
+Sorry in advance if this WriteUp is not as good as you expected, it's my first one so i'll keep improving :) !
+Thanks for reading and see you in the next WriteUP !
 
 
 
