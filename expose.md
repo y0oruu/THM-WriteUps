@@ -18,4 +18,14 @@ Once the scan is done, we can notice 2 interesting directories : "admin" and "ad
 
 ![image](https://github.com/user-attachments/assets/5669c114-3abe-4dfd-a781-febb8862396e)
 
+When we try submitting a login request in the "/admin" page we find out that the button is not working at all. So let's try in the "admin_101" directory. And after testing, we find out that the button is working on this page !
+So let's try capturing the request in BurpSuite !
+
+![image](https://github.com/user-attachments/assets/1f3ab0c2-efaa-458f-a9a6-87ed328ffe4b)
+
+Next, we save the request in a ".txt" file and try to use it in sqlmap. And we can see that the login form is vulnerable to SQL injection !
+
+![image](https://github.com/user-attachments/assets/c5e53bc2-36a7-4453-b239-2bd9ca73cd36)
+
+
 
